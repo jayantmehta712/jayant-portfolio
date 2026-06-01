@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jayant Mehta - Full-Stack Developer | Machine Learning Enthusiast | Cloud Computing Learner. Building scalable web applications, AI-powered solutions, and data-driven systems.">
+    <meta name="keywords" content="Full-Stack Developer, Machine Learning, Cloud Computing, AI, React, Python, Node.js">
+    <meta name="author" content="Jayant Mehta">
+    <meta property="og:title" content="Jayant Mehta - Full-Stack Developer & ML Enthusiast">
+    <meta property="og:description" content="Building scalable web applications, AI-powered solutions, and data-driven systems that solve real-world problems.">
+    <meta property="og:type" content="website">
+    <title>Jayant Mehta | Full-Stack Developer & ML Enthusiast</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">JM</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Jayant Mehta</h1>
+                <h2 class="hero-title">Full-Stack Developer | Machine Learning Enthusiast | Cloud Computing Learner</h2>
+                <p class="hero-tagline">Building scalable web applications, AI-powered solutions, and data-driven systems that solve real-world problems.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#" class="btn btn-secondary" id="downloadResume">Download Resume</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    <a href="https://github.com/jayantmehta712" target="_blank" class="btn btn-github">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card glass">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-number" data-target="5">0</div>
+                    <div class="stat-label">Certifications</div>
+                </div>
+                <div class="stat-card glass">
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-label">Technologies</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-photo glass">
+                    <img src="portfolio-photo.jpeg" alt="Jayant Mehta" class="profile-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="photo-placeholder" style="display: none;">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <p>Add your photo here</p>
+                        <p class="photo-hint">Place: portfolio-photo.jpeg in project folder</p>
+                    </div>
+                </div>
+                <div class="about-text glass">
+                    <p>Computer Science & IT student with hands-on experience in Full-Stack Development, Machine Learning, Cloud Infrastructure, and AI-powered applications. Passionate about building scalable software solutions and leveraging modern technologies to solve real-world challenges. Experienced in developing production-ready applications, training machine learning models on large datasets, and working with cloud services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-card glass">
+                <div class="education-header">
+                    <h3>Bachelor of Technology</h3>
+                    <span class="education-year">2023 – Present</span>
+                </div>
+                <p class="education-degree">Computer Science & Information Technology</p>
+                <p class="education-institution">Dronacharya Group of Institutions</p>
+                <div class="education-coursework">
+                    <h4>Relevant Coursework:</h4>
+                    <ul>
+                        <li>Data Structures & Algorithms</li>
+                        <li>Machine Learning</li>
+                        <li>Cloud Computing</li>
+                        <li>Database Management Systems</li>
+                        <li>Object-Oriented Programming</li>
+                        <li>Backend Development</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category glass">
+                    <h3 class="skill-category-title">Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3 class="skill-category-title">Frontend Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Vite</span>
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3 class="skill-category-title">Backend Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">REST APIs</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3 class="skill-category-title">Machine Learning & Data</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Data Analytics</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3 class="skill-category-title">Cloud & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS EC2</span>
+                        <span class="skill-tag">AWS S3</span>
+                        <span class="skill-tag">AWS IAM</span>
+                        <span class="skill-tag">AWS CloudFront</span>
+                        <span class="skill-tag">Google Cloud</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3 class="skill-category-title">Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">SQLite</span>
+                    </div>
+                </div>
+                <div class="skill-category glass">
+                    <h3 class="skill-category-title">Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="ai">AI</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card glass" data-category="fullstack ai">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Career Platform</h3>
+                        <p class="project-description">A full-stack AI-powered platform providing career guidance, skill-gap analysis, and personalized recommendations using OpenAI APIs.</p>
+                        <div class="project-features">
+                            <span>AI Career Recommendations</span>
+                            <span>Skill Gap Analysis</span>
+                            <span>Responsive Dashboard</span>
+                            <span>OpenAI Integration</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">OpenAI API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jayantmehta712/-Ai-Carrer-Platform-" class="project-link">View Project</a>
+                            <a href="https://github.com/jayantmehta712/-Ai-Carrer-Platform-" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass" data-category="ml">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Credit Card Fraud Detection</h3>
+                        <p class="project-description">Machine learning solution trained on 248,807+ transaction records to detect fraudulent financial transactions.</p>
+                        <div class="project-features">
+                            <span>Random Forest Classifier</span>
+                            <span>Class Imbalance Handling</span>
+                            <span>ROC-AUC Evaluation</span>
+                            <span>Production-Ready Model</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jayantmehta712/credit_card_fraud_detection-using-py-and-ml.py" class="project-link">View Project</a>
+                            <a href="https://github.com/jayantmehta712/credit_card_fraud_detection-using-py-and-ml.py" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card glass" data-category="ml">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <line x1="18" y1="20" x2="18" y2="10"></line>
+                                <line x1="12" y1="20" x2="12" y2="4"></line>
+                                <line x1="6" y1="20" x2="6" y2="14"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Customer Churn Prediction</h3>
+                        <p class="project-description">End-to-end machine learning pipeline for predicting customer churn using advanced feature engineering and model evaluation techniques.</p>
+                        <div class="project-features">
+                            <span>Data Preprocessing</span>
+                            <span>Feature Engineering</span>
+                            <span>Model Deployment</span>
+                            <span>Real-Time Predictions</span>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Pandas</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/jayantmehta712/customer_churn_prediction-by-jay-using-ml-and-py.py" class="project-link">View Project</a>
+                            <a href="https://github.com/jayantmehta712/customer_churn_prediction-by-jay-using-ml-and-py.py" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card glass">
+                    <div class="certification-icon">🎓</div>
+                    <h3>Introduction to Generative AI</h3>
+                    <p>Google Cloud</p>
+                </div>
+                <div class="certification-card glass">
+                    <div class="certification-icon">📊</div>
+                    <h3>Data Analytics Job Simulation</h3>
+                    <p>Deloitte</p>
+                </div>
+                <div class="certification-card glass">
+                    <div class="certification-icon">💼</div>
+                    <h3>Technology Job Simulation</h3>
+                    <p>Deloitte</p>
+                </div>
+                <div class="certification-card glass">
+                    <div class="certification-icon">☁️</div>
+                    <h3>Introduction to Cloud Computing</h3>
+                    <p>Simplilearn</p>
+                </div>
+                <div class="certification-card glass">
+                    <div class="certification-icon">🤖</div>
+                    <h3>Machine Learning Using Python</h3>
+                    <p>Simplilearn</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievement-card glass">
+                <div class="achievement-icon">🏆</div>
+                <h3>Industry Certifications</h3>
+                <p>Completed 5 industry-recognized certifications from Google, Deloitte, and Simplilearn within a single academic year.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Section -->
+    <section id="github" class="section">
+        <div class="container">
+            <h2 class="section-title">GitHub Activity</h2>
+            <div class="github-stats glass" id="githubStats">
+                <div class="github-stat">
+                    <div class="github-stat-number" id="repoCount">-</div>
+                    <div class="github-stat-label">Repositories</div>
+                </div>
+                <div class="github-stat">
+                    <div class="github-stat-number" id="commitCount">-</div>
+                    <div class="github-stat-label">Commits (2024)</div>
+                </div>
+                <div class="github-stat">
+                    <div class="github-stat-number" id="starCount">-</div>
+                    <div class="github-stat-label">Stars Earned</div>
+                </div>
+                <div class="github-stat">
+                    <div class="github-stat-number" id="followerCount">-</div>
+                    <div class="github-stat-label">Followers</div>
+                </div>
+            </div>
+            <div class="github-contribution glass">
+                <h3>Contribution Graph</h3>
+                <div class="contribution-graph">
+                    <img 
+                        src="https://ghchart.rshah.org/jayantmehta712" 
+                        alt="GitHub Contribution Graph" 
+                        id="contributionGraph"
+                        onerror="this.src='https://via.placeholder.com/800x200?text=Contribution+Graph+Not+Available'"
+                    >
+                </div>
+                <a href="https://github.com/jayantmehta712" target="_blank" class="btn btn-outline" style="margin-top: 1rem;">
+                    View Full Profile
+                </a>
+            </div>
+            <div class="github-languages glass" id="githubLanguages">
+                <h3>Top Languages</h3>
+                <div class="language-bar-container">
+                    <div class="language-bar" style="width: 35%; background: #3178c6;">
+                        <span>TypeScript</span>
+                    </div>
+                    <div class="language-bar" style="width: 25%; background: #f7df1e;">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="language-bar" style="width: 20%; background: #3572A5;">
+                        <span>Python</span>
+                    </div>
+                    <div class="language-bar" style="width: 10%; background: #563d7c;">
+                        <span>CSS</span>
+                    </div>
+                    <div class="language-bar" style="width: 10%; background: #e34c26;">
+                        <span>HTML</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card glass">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Full-Stack Development</h3>
+                    <p>Building end-to-end web applications with modern frameworks and best practices.</p>
+                </div>
+                <div class="service-card glass">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2a10 10 0 1 0 10 10H12V2z"></path>
+                            <path d="M12 2a10 10 0 0 1 10 10"></path>
+                            <path d="M12 2v10"></path>
+                        </svg>
+                    </div>
+                    <h3>Machine Learning Solutions</h3>
+                    <p>Developing ML models and data-driven solutions for business problems.</p>
+                </div>
+                <div class="service-card glass">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Cloud Deployment</h3>
+                    <p>Deploying and managing applications on AWS and Google Cloud platforms.</p>
+                </div>
+                <div class="service-card glass">
+                    <div class="service-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                        </svg>
+                    </div>
+                    <h3>API Development</h3>
+                    <p>Creating RESTful APIs and backend services for web and mobile applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info glass">
+                    <h3>Get In Touch</h3>
+                    <p>I'm currently looking for internship opportunities and full-time positions. Feel free to reach out!</p>
+                    <div class="contact-links">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jayantmehta@example.com&su=Inquiry%20from%20Portfolio%20Website&body=Hi%20Jayant,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you%20regarding%20[please%20specify%20your%20reason].%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you.%0D%0A%0D%0ABest%20regards" target="_blank" class="contact-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            jayantmehta@example.com
+                        </a>
+                        <a href="https://www.linkedin.com/in/jayant-mehta-b2752a302/" target="_blank" class="contact-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/jayantmehta712" target="_blank" class="contact-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form glass" style="text-align: center; padding: 3rem;">
+                    <p style="margin-bottom: 2rem; color: var(--text-secondary);">Fill out the form to get in touch with me directly.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScSVnZfqal_E0zvYyjh-5E9RBVeLL7ucYwvLP7sW6xVXcOg5A/viewform?usp=publish-editor" target="_blank" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 2.5rem;">
+                        Open Contact Form
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Jayant Mehta</h3>
+                    <p>Full-Stack Developer | Machine Learning Enthusiast</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/jayantmehta712" target="_blank" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jayant-mehta-b2752a302/" target="_blank" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jayantmehta@example.com&su=Inquiry%20from%20Portfolio%20Website&body=Hi%20Jayant,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you%20regarding%20[please%20specify%20your%20reason].%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you.%0D%0A%0D%0ABest%20regards" target="_blank" aria-label="Email">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Jayant Mehta. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
