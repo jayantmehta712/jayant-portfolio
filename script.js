@@ -125,7 +125,7 @@ filterBtns.forEach(btn => {
 
 // GitHub API Integration
 const fetchGitHubStats = async () => {
-    const username = 'jayantmehta712'; // Replace with actual GitHub username
+    const username = 'jayantmehta712';
     const githubStats = document.getElementById('githubStats');
     
     try {
@@ -159,10 +159,10 @@ const fetchGitHubStats = async () => {
     } catch (error) {
         console.error('Error fetching GitHub stats:', error);
         // Set default values if API fails
-        document.getElementById('repoCount').textContent = '5';
-        document.getElementById('commitCount').textContent = '50';
-        document.getElementById('starCount').textContent = '10';
-        document.getElementById('followerCount').textContent = '20';
+        document.getElementById('repoCount').textContent = '9';
+        document.getElementById('commitCount').textContent = '135';
+        document.getElementById('starCount').textContent = '0';
+        document.getElementById('followerCount').textContent = '0';
     }
 };
 
