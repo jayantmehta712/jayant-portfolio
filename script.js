@@ -195,31 +195,14 @@ const downloadResumeBtn = document.getElementById('downloadResume');
 downloadResumeBtn.addEventListener('click', (e) => {
     e.preventDefault();
     
-    // Check if resume file exists
-    const resumePath = 'jayant-mehta-resume.pdf';
+    const resumePath = 'https://jayant-portfolio-six.vercel.app/jayant-mehta-resume.pdf';
     
-    // Try to download the resume
     const link = document.createElement('a');
     link.href = resumePath;
     link.download = 'jayant-mehta-resume.pdf';
-    
-    // Add error handling
-    link.onerror = () => {
-        alert('Resume file not found. Please add your jayant-mehta-resume.pdf file to the project directory.');
-    };
-    
-    // Try to trigger download
-    fetch(resumePath)
-        .then(response => {
-            if (response.ok) {
-                link.click();
-            } else {
-                throw new Error('Resume file not found');
-            }
-        })
-        .catch(() => {
-            alert('Resume file not found. Please add your jayant-mehta-resume.pdf file to the project directory.');
-        });
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.click();
 });
 
 // Navbar Background on Scroll
