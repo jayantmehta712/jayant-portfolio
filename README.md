@@ -1,12 +1,12 @@
 # Jayant Portfolio
 
-A personal portfolio website built with HTML, CSS, and JavaScript to showcase projects, skills, resume, and contact information.
+A personal portfolio website built with HTML, CSS, and JavaScript to showcase projects, skills, live resume access, and contact information.
 
 ## Features
 
 - Responsive portfolio landing page.
 - Project showcase for interview-ready work.
-- Resume PDF included for quick recruiter access.
+- Resume button links to the live Vercel-hosted resume.
 - Clean frontend structure using simple web technologies.
 
 ## Tech Stack
@@ -23,7 +23,6 @@ jayant-portfolio/
   styles.css
   script.js
   portfolio-photo.jpeg
-  jayant-mehta-resume.pdf
 ```
 
 ## How to Run
